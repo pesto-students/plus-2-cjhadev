@@ -1,0 +1,30 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+header {
+  display: flex;
+  gap: 30px;
+  background: #413F42;
+  padding: 20px;
+}
+.text > .box1 > p {
+  margin: 0;
+  padding: 0;
+}
+.text > .box2 > ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0px;
+  padding: 0;
+}
+.text {
+  position: relative;
+  color: #ffffff;
+}
+.box2 {
+  position: absolute;
+  bottom: 0;
+}

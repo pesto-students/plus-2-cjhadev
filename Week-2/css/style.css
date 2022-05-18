@@ -18,6 +18,8 @@ header > h1, header > p {
 #rockstars {
     display: flex;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     /* flex-direction: row; */
     /* justify-content: space-around; */
 }
@@ -33,4 +35,32 @@ div > a {
     padding: 10px;
     font-size: 0.8em;
     color:blue;
+}
+#singup-form{
+    width: 50%;
+    margin: 50px auto;
+    font-size: 0.9em;
+    background-color: lightgray;
+    padding: 50px;
+}
+input[type='text'], input[type="email"] {
+    padding: 5px;
+    width: 80%;
+}
+#singup-form > form > div {
+    margin: 20px 20px;
+}
+input[type="email"] {
+    margin-left: 55px;
+}
+footer{
+    background-image: url('../images/bg-image.jpeg');
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button {
+    padding: 5px 10px;
+    font-family: 'Tangerine';
+    font-size: 0.9em;
 }

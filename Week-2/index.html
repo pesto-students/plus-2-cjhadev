@@ -42,5 +42,38 @@
             <a href="#">Read more...</a>
         </div>
     </section>
+    <section id="singup-form">
+        <form action="#">
+            <div>
+                <span>Title: </span>
+                <label for="mr">Mr. </label>
+                <input type="radio" id="mr" name="title" value="Mr.">
+                <label for="miss">Miss. </label>
+                <input type="radio" id="miss" name="title" value="Miss.">
+                <label for="mrs">Mrs. </label>
+                <input type="radio" id="mrs" name="title" value="Mrs.">
+            </div>
+            <div>
+                <label for="first_name">First Name : </label>
+                <input type="text" name="first_name" required placeholder="First Name"/>
+            </div>
+            <div>
+                <label for="last_name">Last Name : </label>
+                <input type="text" name="last_name" required placeholder="Last Name"/>
+            </div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" required placeholder="email"/>
+            </div>
+            <div>
+                <input type="checkbox" name="term_conditions" required />
+                <label for="email">I agree to the <a href="#">terms and conditions:</a> </label>
+            </div>            
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer></footer>
 </body>
 </html>

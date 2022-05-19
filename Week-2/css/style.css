@@ -1,0 +1,30 @@
+section{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#box1{
+    background-color: red;
+    transition: 1s all;
+}
+#box2 {
+    background-color: yellow;
+    transition: 1s all;
+}
+#box3{
+    background-color: blue;
+    transition: 1s all;
+}
+#box4{
+    background-color: green;
+    transition: 1s all;
+}
+section > div {
+    width: 150px;
+    height: 150px;
+}
+#box1:hover, #box2:hover, #box3:hover, #box4:hover{
+    transform: rotate(90deg)
+}

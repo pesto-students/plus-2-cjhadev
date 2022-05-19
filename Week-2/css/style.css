@@ -20,8 +20,10 @@ header > h1, header > p {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
+    flex-direction: row;
+}
+#rockstars > div {
+    margin: 0 10px;
 }
 div > img {
     width: 250px;
@@ -29,6 +31,7 @@ div > img {
 }
 div > p {
     font-size: 1em;
+    margin: 5px 0;
 }
 div > a {
     text-decoration: none;
@@ -37,7 +40,7 @@ div > a {
     color:blue;
 }
 #singup-form{
-    width: 50%;
+    width: 30%;
     margin: 50px auto;
     font-size: 0.9em;
     background-color: lightgray;
@@ -45,13 +48,11 @@ div > a {
 }
 input[type='text'], input[type="email"] {
     padding: 5px;
-    width: 80%;
+    width: 100%;
+    display: block;
 }
 #singup-form > form > div {
     margin: 20px 20px;
-}
-input[type="email"] {
-    margin-left: 55px;
 }
 footer{
     background-image: url('../images/bg-image.jpeg');
@@ -63,4 +64,17 @@ button {
     padding: 5px 10px;
     font-family: 'Tangerine';
     font-size: 0.9em;
+}
+@media screen and (max-width: 768px){
+    #singup-form {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 767px){
+    #rockstars{
+        flex-direction: column;
+    }
+    #rockstars > div {
+        margin: 10px;
+    }
 }

@@ -25,6 +25,23 @@ section > div {
     width: 150px;
     height: 150px;
 }
-#box1:hover, #box2:hover, #box3:hover, #box4:hover{
-    transform: rotate(90deg)
+section:hover > #box1{
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    transition: transform 1s ease-in-out;
+}
+section:hover >#box3{
+    transform: rotate(-90deg);
+    transform-origin: 0px 150px;
+    transition: transform 1s ease-in-out;
+}
+section:hover > #box2{
+    transform: rotate(-90deg);
+    transform-origin: 150px 0;
+    transition: transform 1s ease-in-out;
+}
+section:hover > #box4 {
+    transform: rotate(90deg);
+    transform-origin: 150px 150px;
+    transition: transform 1s ease-in-out;
 }

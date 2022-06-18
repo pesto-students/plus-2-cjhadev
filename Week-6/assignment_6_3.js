@@ -27,6 +27,27 @@ const repeatTimes = (pushKey, repeatValue, arr) => {
 }
 const array = [0, 2, 1, 2, 0];
 const array2 = [0, 1, 0]
-console.log(sortArray(array));//[ '0', '0', '1', '2', '2' ]
-console.log(sortArray(array2));// [ '0', '0', '1' ]
+//console.log(sortArray(array));//[ '0', '0', '1', '2', '2' ]
+//console.log(sortArray(array2));// [ '0', '0', '1' ]
+
+//Another method
+//As we know it's an 0's, 1's & 2's array
+//we can use that information directly
+const anotherSortArrayfunc = (arra) => {
+    let arr_0 = [];
+    let arr_1 = [];
+    let arr_2 = [];
+    arra.forEach(el => {
+        if(el == 0){
+            arr_0.push(el);
+        }else if(el == 1){
+            arr_1.push(el);
+        }else{
+            arr_2.push(el);
+        }
+    })
+    let new_arr = arr_0.concat(arr_1).concat(arr_2);
+    return new_arr;
+}
+console.log(anotherSortArrayfunc(array2))
 

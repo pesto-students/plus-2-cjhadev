@@ -1,0 +1,6 @@
+1)select id, weight from items order by weight ASC;
+2)select * from warehouses inner join cities on cities.id = warehouses.city_id where cities.city = "Pune";
+3)select * from items inner join items_orders on items_orders.item_id = items.id where items_orders.order_id IN (select orders.id from orders inner join customers on customers.id = orders.customer_id where customers.cname = "cj");
+4)select warehouse_id, COUNT(id) from stores group by warehouse_id order by count(id) DESC Limit 1;
+5)select COUNT(item_id),item_id from items_orders group by item_id having count(item_id) > 3 ;
+6)select * from orders inner join customers on customers.id = orders.customer_id;
